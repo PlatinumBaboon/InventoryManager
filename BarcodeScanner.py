@@ -6,13 +6,13 @@ import pickle
 import pandas as pd
 
 def save_inventory(Diction):
-    filename = 'dogs.text'
+    filename = 'inventory.text'
     outfile = open(filename,'wb')
     pickle.dump(Diction,outfile)
     outfile.close()
 
 def open_inventory(_dict):
-    filename = 'dogs.text'
+    filename = 'inventory.text'
     infile = open(filename,'rb')
     new_dict = pickle.load(infile)
     infile.close()
